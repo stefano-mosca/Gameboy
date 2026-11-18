@@ -5,7 +5,8 @@
 #include <cstdint>
 #include <string>
 
-enum class MBC {
+enum class MBC
+{
     rom_only = 0x00,
     MBC1 = 0x01,
     MBC1_ram = 0x02,
@@ -25,7 +26,8 @@ enum class MBC {
     MBC5_rumble_ram_battery = 0x1E
 };
 
-struct Cartridge {
+struct Cartridge
+{
     std::vector<uint8_t> rom;
     std::vector<uint8_t> external_ram;
     MBC mbc_type;
