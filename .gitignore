@@ -1,3 +1,4 @@
 build/
+roms_test/
 *.o
 *.d
